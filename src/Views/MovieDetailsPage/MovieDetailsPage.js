@@ -16,7 +16,7 @@ export default function MovieDetailsPage() {
     const history = useHistory();
 
     const handleGoBack = () => {
-    history.push(location?.state?.from || '/');
+    history.push(location?.state?.from?.location || '/');
     };
 
     useEffect(() => {
